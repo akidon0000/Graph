@@ -30,19 +30,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let vc = R.storyboard.horizontalBarChart.horiBarvc()!
             self.present(vc, animated: true, completion: nil)
         case "円グラフ":
-            let vc = R.storyboard.horizontalBarChart.horiBarvc()!
+            let vc = R.storyboard.pieChartView.pievc()!
             self.present(vc, animated: true, completion: nil)
         case "点グラフ":
-            let vc = R.storyboard.horizontalBarChart.horiBarvc()!
+            let vc = R.storyboard.scatterChartView.scattervc()!
             self.present(vc, animated: true, completion: nil)
         case "バブルチャート":
-            let vc = R.storyboard.horizontalBarChart.horiBarvc()!
+            let vc = R.storyboard.bubbleChartView.bubblevc()!
             self.present(vc, animated: true, completion: nil)
         case "レーダーチャート":
-            let vc = R.storyboard.horizontalBarChart.horiBarvc()!
+            let vc = R.storyboard.radarChartView.radarvc()!
             self.present(vc, animated: true, completion: nil)
         case "ロウソク足":
-            let vc = R.storyboard.horizontalBarChart.horiBarvc()!
+            let vc = R.storyboard.candleStickChartView.candlevc()!
             self.present(vc, animated: true, completion: nil)
         default:
             print("error")

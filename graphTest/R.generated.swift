@@ -89,10 +89,14 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 10 storyboards.
   struct storyboard {
     /// Storyboard `BarChartView`.
     static let barChartView = _R.storyboard.barChartView()
+    /// Storyboard `BubbleChartView`.
+    static let bubbleChartView = _R.storyboard.bubbleChartView()
+    /// Storyboard `CandleStickChartView`.
+    static let candleStickChartView = _R.storyboard.candleStickChartView()
     /// Storyboard `HorizontalBarChart`.
     static let horizontalBarChart = _R.storyboard.horizontalBarChart()
     /// Storyboard `LaunchScreen`.
@@ -101,11 +105,31 @@ struct R: Rswift.Validatable {
     static let lineGraphView = _R.storyboard.lineGraphView()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `PieChartView`.
+    static let pieChartView = _R.storyboard.pieChartView()
+    /// Storyboard `RadarChartView`.
+    static let radarChartView = _R.storyboard.radarChartView()
+    /// Storyboard `ScatterChartView`.
+    static let scatterChartView = _R.storyboard.scatterChartView()
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "BarChartView", bundle: ...)`
     static func barChartView(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.barChartView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "BubbleChartView", bundle: ...)`
+    static func bubbleChartView(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.bubbleChartView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "CandleStickChartView", bundle: ...)`
+    static func candleStickChartView(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.candleStickChartView)
     }
     #endif
 
@@ -134,6 +158,27 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "PieChartView", bundle: ...)`
+    static func pieChartView(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.pieChartView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "RadarChartView", bundle: ...)`
+    static func radarChartView(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.radarChartView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "ScatterChartView", bundle: ...)`
+    static func scatterChartView(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.scatterChartView)
     }
     #endif
 
@@ -222,6 +267,12 @@ struct _R: Rswift.Validatable {
       try barChartView.validate()
       #endif
       #if os(iOS) || os(tvOS)
+      try bubbleChartView.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try candleStickChartView.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try horizontalBarChart.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -232,6 +283,15 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try main.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try pieChartView.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try radarChartView.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try scatterChartView.validate()
       #endif
     }
 
@@ -249,6 +309,46 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.barChartView().barvc() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'barvc' could not be loaded from storyboard 'BarChartView' as 'BarChartViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct bubbleChartView: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bubblevc = StoryboardViewControllerResource<BubbleChartViewController>(identifier: "bubblevc")
+      let bundle = R.hostingBundle
+      let name = "BubbleChartView"
+
+      func bubblevc(_: Void = ()) -> BubbleChartViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: bubblevc)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.bubbleChartView().bubblevc() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'bubblevc' could not be loaded from storyboard 'BubbleChartView' as 'BubbleChartViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct candleStickChartView: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let candlevc = StoryboardViewControllerResource<CandleStickChartViewController>(identifier: "candlevc")
+      let name = "CandleStickChartView"
+
+      func candlevc(_: Void = ()) -> CandleStickChartViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: candlevc)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.candleStickChartView().candlevc() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'candlevc' could not be loaded from storyboard 'CandleStickChartView' as 'CandleStickChartViewController'.") }
       }
 
       fileprivate init() {}
@@ -327,6 +427,66 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.main().mainvc() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'mainvc' could not be loaded from storyboard 'Main' as 'ViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct pieChartView: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "PieChartView"
+      let pievc = StoryboardViewControllerResource<PieChartViewController>(identifier: "pievc")
+
+      func pievc(_: Void = ()) -> PieChartViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: pievc)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.pieChartView().pievc() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'pievc' could not be loaded from storyboard 'PieChartView' as 'PieChartViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct radarChartView: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "RadarChartView"
+      let radarvc = StoryboardViewControllerResource<RadarChartViewController>(identifier: "radarvc")
+
+      func radarvc(_: Void = ()) -> RadarChartViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: radarvc)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.radarChartView().radarvc() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'radarvc' could not be loaded from storyboard 'RadarChartView' as 'RadarChartViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct scatterChartView: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "ScatterChartView"
+      let scattervc = StoryboardViewControllerResource<ScatterChartViewController>(identifier: "scattervc")
+
+      func scattervc(_: Void = ()) -> ScatterChartViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: scattervc)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.scatterChartView().scattervc() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'scattervc' could not be loaded from storyboard 'ScatterChartView' as 'ScatterChartViewController'.") }
       }
 
       fileprivate init() {}

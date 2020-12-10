@@ -21,6 +21,16 @@
 		C37F700B2581C82400ADAC57 /* BarChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37F700A2581C82400ADAC57 /* BarChartView.storyboard */; };
 		C37F700D2581CFCF00ADAC57 /* HorizontalBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F700C2581CFCF00ADAC57 /* HorizontalBarChartViewController.swift */; };
 		C37F700F2581CFDF00ADAC57 /* HorizontalBarChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37F700E2581CFDF00ADAC57 /* HorizontalBarChart.storyboard */; };
+		C37F70112581E15000ADAC57 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F70102581E15000ADAC57 /* PieChartViewController.swift */; };
+		C37F70132581E16000ADAC57 /* PieChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37F70122581E16000ADAC57 /* PieChartView.storyboard */; };
+		C37F70152581E31500ADAC57 /* BubbleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F70142581E31500ADAC57 /* BubbleChartViewController.swift */; };
+		C37F70172581E33300ADAC57 /* BubbleChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37F70162581E33300ADAC57 /* BubbleChartView.storyboard */; };
+		C37F70192581E36F00ADAC57 /* ScatterChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F70182581E36F00ADAC57 /* ScatterChartViewController.swift */; };
+		C37F701B2581E38700ADAC57 /* ScatterChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37F701A2581E38700ADAC57 /* ScatterChartView.storyboard */; };
+		C37F701D2581E3A500ADAC57 /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F701C2581E3A500ADAC57 /* RadarChartViewController.swift */; };
+		C37F701F2581E3BD00ADAC57 /* RadarChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37F701E2581E3BD00ADAC57 /* RadarChartView.storyboard */; };
+		C37F70212581E3E000ADAC57 /* CandleStickChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37F70202581E3E000ADAC57 /* CandleStickChartViewController.swift */; };
+		C37F70232581E3ED00ADAC57 /* CandleStickChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37F70222581E3ED00ADAC57 /* CandleStickChartView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +51,16 @@
 		C37F700A2581C82400ADAC57 /* BarChartView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarChartView.storyboard; sourceTree = "<group>"; };
 		C37F700C2581CFCF00ADAC57 /* HorizontalBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarChartViewController.swift; sourceTree = "<group>"; };
 		C37F700E2581CFDF00ADAC57 /* HorizontalBarChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HorizontalBarChart.storyboard; sourceTree = "<group>"; };
+		C37F70102581E15000ADAC57 /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		C37F70122581E16000ADAC57 /* PieChartView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartView.storyboard; sourceTree = "<group>"; };
+		C37F70142581E31500ADAC57 /* BubbleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChartViewController.swift; sourceTree = "<group>"; };
+		C37F70162581E33300ADAC57 /* BubbleChartView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BubbleChartView.storyboard; sourceTree = "<group>"; };
+		C37F70182581E36F00ADAC57 /* ScatterChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterChartViewController.swift; sourceTree = "<group>"; };
+		C37F701A2581E38700ADAC57 /* ScatterChartView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScatterChartView.storyboard; sourceTree = "<group>"; };
+		C37F701C2581E3A500ADAC57 /* RadarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
+		C37F701E2581E3BD00ADAC57 /* RadarChartView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RadarChartView.storyboard; sourceTree = "<group>"; };
+		C37F70202581E3E000ADAC57 /* CandleStickChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickChartViewController.swift; sourceTree = "<group>"; };
+		C37F70222581E3ED00ADAC57 /* CandleStickChartView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CandleStickChartView.storyboard; sourceTree = "<group>"; };
 		EC0F05AB5DD254FFDC016B95 /* Pods-graphTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-graphTest.debug.xcconfig"; path = "Target Support Files/Pods-graphTest/Pods-graphTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +116,16 @@
 				C37F700A2581C82400ADAC57 /* BarChartView.storyboard */,
 				C37F700C2581CFCF00ADAC57 /* HorizontalBarChartViewController.swift */,
 				C37F700E2581CFDF00ADAC57 /* HorizontalBarChart.storyboard */,
+				C37F70102581E15000ADAC57 /* PieChartViewController.swift */,
+				C37F70122581E16000ADAC57 /* PieChartView.storyboard */,
+				C37F70182581E36F00ADAC57 /* ScatterChartViewController.swift */,
+				C37F701A2581E38700ADAC57 /* ScatterChartView.storyboard */,
+				C37F70142581E31500ADAC57 /* BubbleChartViewController.swift */,
+				C37F70162581E33300ADAC57 /* BubbleChartView.storyboard */,
+				C37F701C2581E3A500ADAC57 /* RadarChartViewController.swift */,
+				C37F701E2581E3BD00ADAC57 /* RadarChartView.storyboard */,
+				C37F70202581E3E000ADAC57 /* CandleStickChartViewController.swift */,
+				C37F70222581E3ED00ADAC57 /* CandleStickChartView.storyboard */,
 				C32C288B257BE781002E7F64 /* Assets.xcassets */,
 				C32C288D257BE781002E7F64 /* LaunchScreen.storyboard */,
 				C32C2890257BE781002E7F64 /* Info.plist */,
@@ -174,10 +204,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C37F70012581B88000ADAC57 /* LineGraphView.storyboard in Resources */,
+				C37F701F2581E3BD00ADAC57 /* RadarChartView.storyboard in Resources */,
 				C37F700B2581C82400ADAC57 /* BarChartView.storyboard in Resources */,
+				C37F70172581E33300ADAC57 /* BubbleChartView.storyboard in Resources */,
+				C37F70232581E3ED00ADAC57 /* CandleStickChartView.storyboard in Resources */,
 				C32C288F257BE781002E7F64 /* LaunchScreen.storyboard in Resources */,
+				C37F70132581E16000ADAC57 /* PieChartView.storyboard in Resources */,
 				C37F700F2581CFDF00ADAC57 /* HorizontalBarChart.storyboard in Resources */,
 				C32C288C257BE781002E7F64 /* Assets.xcassets in Resources */,
+				C37F701B2581E38700ADAC57 /* ScatterChartView.storyboard in Resources */,
 				C32C288A257BE77D002E7F64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +291,12 @@
 				C32C2883257BE77D002E7F64 /* AppDelegate.swift in Sources */,
 				C32C2885257BE77D002E7F64 /* SceneDelegate.swift in Sources */,
 				C37F6FFD2581B5C800ADAC57 /* R.generated.swift in Sources */,
+				C37F70192581E36F00ADAC57 /* ScatterChartViewController.swift in Sources */,
+				C37F70112581E15000ADAC57 /* PieChartViewController.swift in Sources */,
+				C37F70152581E31500ADAC57 /* BubbleChartViewController.swift in Sources */,
+				C37F70212581E3E000ADAC57 /* CandleStickChartViewController.swift in Sources */,
 				C37F70092581C81300ADAC57 /* BarChartViewController.swift in Sources */,
+				C37F701D2581E3A500ADAC57 /* RadarChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

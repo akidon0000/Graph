@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bubble Chart View Controller-->
+        <scene sceneID="cU4-l1-qht">
+            <objects>
+                <viewController storyboardIdentifier="bubblevc" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ezh-7A-5ZE" customClass="BubbleChartViewController" customModule="graphTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rix-I0-SbB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uup-Cj-h1c">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="バブルチャート" id="klj-BT-jTa">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="Ixx-di-s0A">
+                                            <connections>
+                                                <action selector="buckButton:" destination="ezh-7A-5ZE" id="fCV-I7-5Gh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uup-Cj-h1c" firstAttribute="leading" secondItem="X9O-yB-kfz" secondAttribute="leading" id="J0w-ci-llp"/>
+                            <constraint firstItem="uup-Cj-h1c" firstAttribute="trailing" secondItem="X9O-yB-kfz" secondAttribute="trailing" id="gd3-mc-827"/>
+                            <constraint firstItem="uup-Cj-h1c" firstAttribute="top" secondItem="X9O-yB-kfz" secondAttribute="top" id="u1G-Y6-P5F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X9O-yB-kfz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kk9-vN-cw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="-4"/>
+        </scene>
+    </scenes>
+</document>
