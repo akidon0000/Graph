@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainvc" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="graphTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yKe-a3-mzg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u1a-bz-qFx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tableCells" id="SJZ-y4-g48">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SJZ-y4-g48" id="xrE-iw-tvt">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hHS-me-38O"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Iqo-uw-qJR"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ei0-vw-a6X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="グラフ一覧" id="xev-UG-8os"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pz0-Qk-sFn" firstAttribute="bottom" secondItem="u1a-bz-qFx" secondAttribute="bottom" id="6Xv-8M-Cvb"/>
+                            <constraint firstItem="Ei0-vw-a6X" firstAttribute="leading" secondItem="pz0-Qk-sFn" secondAttribute="leading" id="KZz-sh-8YW"/>
+                            <constraint firstItem="pz0-Qk-sFn" firstAttribute="trailing" secondItem="u1a-bz-qFx" secondAttribute="trailing" id="Sr9-3J-qFB"/>
+                            <constraint firstItem="Ei0-vw-a6X" firstAttribute="top" secondItem="pz0-Qk-sFn" secondAttribute="top" id="Uds-gr-iED"/>
+                            <constraint firstItem="Ei0-vw-a6X" firstAttribute="trailing" secondItem="pz0-Qk-sFn" secondAttribute="trailing" id="m4A-59-duV"/>
+                            <constraint firstItem="u1a-bz-qFx" firstAttribute="top" secondItem="Ei0-vw-a6X" secondAttribute="bottom" id="pjS-z5-fP0"/>
+                            <constraint firstItem="u1a-bz-qFx" firstAttribute="leading" secondItem="pz0-Qk-sFn" secondAttribute="leading" id="sbG-LH-5Lu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pz0-Qk-sFn"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="u1a-bz-qFx" id="rQ8-Tw-HgO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+</document>
